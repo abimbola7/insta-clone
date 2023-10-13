@@ -5,7 +5,7 @@ import SigninButton from '@/components/siginbutton';
 
 
 export default async function signIn() {
-  const providers = await getData();
+  const providers = await getProviders();
   return (
     <>
     <div
@@ -15,7 +15,7 @@ export default async function signIn() {
         <p className='font-xs italics'>This is not a real app, it is a personal project</p>
         { providers }
         <div className='mt-40'>
-          {Object.values(providers).map((provider) => (
+          {providers && Object.values(providers).map((provider) => (
             <div key={provider.name}>
               <SigninButton name={provider.name} id={provider.id}/>
             </div>
@@ -26,7 +26,7 @@ export default async function signIn() {
   )
 }
 
-async function getData() {
-  const providers= await getProviders();
-  return providers;
-}
+// async function getData() {
+//   const providers= await getProviders();
+//   return providers;
+// }
