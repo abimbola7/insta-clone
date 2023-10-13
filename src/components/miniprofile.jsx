@@ -8,7 +8,7 @@ export default function MiniProfile() {
     <>
       {
           <div className='flex items-center justify-between mt-14 ml-10'>
-            <img src={"https://links.papareact.com/3ke"} alt="avatar" className='rounded-full border p-[2px] w-16 h-16 object-contain'/>
+            <img src={data?.user?.image} alt="avatar" className='rounded-full border p-[2px] w-16 h-16 object-contain'/>
             <div className="flex-1 mx-4">
               <h2 className="font-bold">{data?.user?.username}</h2>
               <p className="text-gray-400 text-sm">Welcome to Instagram</p>
