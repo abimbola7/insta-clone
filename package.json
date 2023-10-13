@@ -27,6 +27,7 @@
   "devDependencies": {
     "@faker-js/faker": "^8.1.0",
     "autoprefixer": "^10",
+    "encoding": "^0.1.13",
     "eslint": "^8",
     "eslint-config-next": "13.5.4",
     "postcss": "^8",
