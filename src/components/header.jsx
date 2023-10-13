@@ -68,7 +68,7 @@ function Header() {
         <AiFillHome
          onClick={()=>router.push("/")}
          className='btn' />
-        <AiOutlineMenu className='md:hidden cursor-pointer '/>
+        <AiOutlineMenu className='md:hidden cursor-pointer flex-shrink-0'/>
         {
           data ? (
             <>
@@ -81,7 +81,7 @@ function Header() {
             </>
           ) : (
             <button
-            clasName="text-xs md:text-base"
+            className="text-xs md:text-base"
             onClick={signIn}
             >Sign in</button>
           )
