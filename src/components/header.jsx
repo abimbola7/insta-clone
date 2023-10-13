@@ -35,7 +35,7 @@ function Header() {
       </div>
       <div
       onClick={()=>router.push("/")}
-      className='relative w-10 h-10 lg:hidden cursor-pointer flex-shrink-0'
+      className='relative w-8 h-8 lg:hidden cursor-pointer flex-shrink-0'
       >
         <Image
         src={`https://links.papareact.com/jjm`}
@@ -75,7 +75,7 @@ function Header() {
               <PiPaperPlane className="btn"/> 
               <BsPlusCircle 
               onClick={()=>setOpen(true)}
-              className='btn' />
+              className='cursor-pointer text-2xl hover:scale-125 transform transition-all duration-150 ease-out' />
               <HiOutlineUserGroup className="btn"/>
               <AiOutlineHeart className="btn" />
             </>
