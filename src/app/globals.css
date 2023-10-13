@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+  .btn {
+    @apply hidden md:inline-flex cursor-pointer text-2xl hover:scale-125 transform transition-all duration-150 ease-out;
+  }
+  .icons {
+    @apply text-2xl transition-transform hover:scale-110 duration-200 cursor-pointer transform ease-out
+  }
+}
