@@ -12,7 +12,6 @@ import { ref, getDownloadURL, uploadString } from 'firebase/storage';
 
 export default function Modal() {
   const { data } = useSession()
-  console.log(data?.user)
   const filePickerRef = React.useRef(null);
   const captionRef = React.useRef(null);
   const [ selectedFile, setSelectedFile ] = React.useState(null);
@@ -41,7 +40,6 @@ export default function Modal() {
       timestamp : serverTimestamp()
      })
 
-     console.log("New doc added with id: ", docRef);
 
      const imageRef = ref(storage, `posts/${docRef.id}/image`);
      

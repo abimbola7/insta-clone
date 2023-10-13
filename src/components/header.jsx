@@ -17,7 +17,6 @@ function Header() {
   const router = useRouter();
   const { data } = useSession();
   const [ open, setOpen ] = useRecoilState(modalAtom)
-  console.log(data);
   return (
     <header
     className='bg-white shadow-md sticky top-0 z-[1000]'

@@ -6,7 +6,6 @@ import SigninButton from '@/components/siginbutton';
 
 export default async function signIn() {
   const providers = await getData();
-  console.log(providers)
   return (
     <>
     <div
