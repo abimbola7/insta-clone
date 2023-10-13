@@ -14,7 +14,7 @@ export default async function signIn() {
         <img className='w-80' src='https://links.papareact.com/ocw' alt=""/>
         <p className='font-xs italics'>This is not a real app, it is a personal project</p>
         <div className='mt-40'>
-          {Object.values(providers).map((provider) => (
+          {providers && Object.values(providers).map((provider) => (
             <div key={provider.name}>
               <SigninButton name={provider.name} id={provider.id}/>
             </div>
