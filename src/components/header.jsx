@@ -21,7 +21,7 @@ function Header() {
     <header
     className='bg-white shadow-md sticky top-0 z-[1000]'
     >
-    <div className='flex justify-between max-w-6xl mx-5 lg:mx-auto items-center bg-white'>
+    <div className='flex justify-between max-w-6xl mx-2 md:mx-5 lg:mx-auto items-center bg-white'>
       <div
       onClick={()=>router.push("/")}
       className='relative w-24 h-24 hidden lg:inline-grid cursor-pointer'
@@ -50,7 +50,7 @@ function Header() {
       className='max-w-xs'
       >
         <div
-        className='relative p-3 rounded-md'
+        className='relative p-2 md:p-3 rounded-md'
         >
           <AiOutlineSearch
             className='absolute text-gray-400 pointer-events-none top-5 left-5 text-xl'
@@ -64,7 +64,7 @@ function Header() {
       </div>
       
       <div
-      className='flex items-center justify-end space-x-4'>
+      className='flex items-center justify-end space-x-2 md:space-x-3'>
         <AiFillHome
          onClick={()=>router.push("/")}
          className='btn' />
